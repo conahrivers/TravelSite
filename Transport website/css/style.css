@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background-image: url('http://gottakeepmovin.com/wp-content/uploads/2015/04/2015-04-28-09.03.59-3.jpg');
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+#mainSearchBar {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+#mainSearchBar:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 45px;
+  height: 46px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img.train {
+	position: absolute;
+	left: 30%;
+	top:27%;
+	max-width: 100px;
+	max-height: auto;
+}
+
+img.bus {
+	position: absolute;
+	left: 46%;
+	top:27%;
+	max-width: 115px;
+	max-height: auto;
+}
+
+img.plane {
+	position: absolute;
+	right: 20%;
+	top:27%;
+	max-width: 100px;
+	max-height: auto;
+}

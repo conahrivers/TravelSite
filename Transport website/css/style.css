@@ -8,11 +8,11 @@ body{
 .search {
   width: 100%;
   position: relative;
+  text-align: center;
 }
 
 #mainSearchBar {
-  float: left;
-  width: 100%;
+  width: 50%;
   border: 3px solid #00B4CC;
   padding: 5px;
   height: 30px;
@@ -26,8 +26,7 @@ body{
 }
 
 .searchButton {
-  position: absolute;  
-  right: -50px;
+  position: absolute;
   width: 45px;
   height: 46px;
   border: 1px solid #00B4CC;
@@ -40,33 +39,37 @@ body{
 }
 
 .wrap{
-  width: 50%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 5em auto 2em auto;
 }
 
-img.train {
-	position: absolute;
-	left: 30%;
-	top:27%;
-	max-width: 100px;
-	max-height: auto;
+.icons {
+  width: 100%;
+  text-align: center;
 }
 
-img.bus {
-	position: absolute;
-	left: 46%;
-	top:27%;
-	max-width: 115px;
-	max-height: auto;
+.icons img {
+  max-width: 100px;
 }
 
-img.plane {
-	position: absolute;
-	right: 20%;
-	top:27%;
-	max-width: 100px;
-	max-height: auto;
+.train, .bus, .plane {
+  display: inline-block;
+  margin-left: 3em;
 }
+
+.departureContainer {
+	width: 100%;
+	text-align: center;
+	border: 0.15em solid #00B4CC;
+}
+
+#calendarDropDown, #timeDropDown {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.wrapper {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+

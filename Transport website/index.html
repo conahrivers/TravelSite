@@ -15,30 +15,41 @@
 
 <body>
 	<section class = "wrapper">
-	<div class="wrap">
-	   <div class="search">
-		  <input type="text" id="mainSearchBar" placeholder="Where to?">
-		  <button type="submit" class="searchButton"> <i class = "fa fa-search"> </i>
-		 </button>
-	   </div>
-	</div>
+		<div class="wrap">
+		<div class="search">
+		<form>
+			<input type="text" id="mainSearchBar" placeholder="Where to?">
+			<button type="submit" class="searchButton"> <i class = "fa fa-search"> </i>
+			</button>
+		</form>
+		</div>
+		</div>
 	
-	<div class = "icons">
-		<div class = "train">
-			<a href = "https://www.thetrainline.com/"> <img src = "images/train.png" alt = "Train icon" class = "train"> </a>
+		<div class = "icons">
+			<div class = "train">
+				<a href = "https://www.thetrainline.com/"> <img src = "images/train.png" alt = "Train icon" class = "train"> </a>
+			</div>
+			<div class = "bus">
+				<a href = "https://www.checkmybus.co.uk/"> <img src = "images/bus.png" alt = "Bus icon" class = "bus"> </a>
+			</div>
+			<div class = "plane">
+				<a href = "https://www.flightcentre.co.uk/flights/quote/destinations?utm_source=google&utm_medium=cpc&utm_campaign=FCB_Generic_Pure_Cheap-Broad&infinity=ict2~net~gaw~ar~234247939610~kw~cheap%20flights~mt~b~cmp~FCB%20%2F%20Generic%20%2F%20Pure%20-%20Exact~ag~Pure%20Flight%20-%20E&gclid=EAIaIQobChMIns3ukM3S1wIVZZPtCh2dQAP9EAAYASAAEgJDDfD_BwE&gclsrc=aw.ds"> <img src = "images/plane.png" alt = "Plane icon" class = "plane"> </a>
+			</div>
 		</div>
-		<div class = "bus">
-			<a href = "https://www.checkmybus.co.uk/"> <img src = "images/bus.png" alt = "Bus icon" class = "bus"> </a>
+		
+		<div class = "departureContainer">
+			<form>
+				<p> Departure <input type = "date" id = "calendarDropDown"> 
+				<input type = "time" id = "timeDropDown">  Return <button type = "submit" id = "returnJourneyButton"> </button> </p>
+			</form>
+			<form>
+				<p> Departure <input type = "date" id = "calendarDropDown"> 
+				<input type = "time" id = "timeDropDown"> </p>
+			</form>
 		</div>
-		<div class = "plane">
-			<a href = "https://www.flightcentre.co.uk/flights/quote/destinations?utm_source=google&utm_medium=cpc&utm_campaign=FCB_Generic_Pure_Cheap-Broad&infinity=ict2~net~gaw~ar~234247939610~kw~cheap%20flights~mt~b~cmp~FCB%20%2F%20Generic%20%2F%20Pure%20-%20Exact~ag~Pure%20Flight%20-%20E&gclid=EAIaIQobChMIns3ukM3S1wIVZZPtCh2dQAP9EAAYASAAEgJDDfD_BwE&gclsrc=aw.ds"> <img src = "images/plane.png" alt = "Plane icon" class = "plane"> </a>
-		</div>
-	</div>
 	
-	<div class = "departureContainer">
-		<p> Departure <input type = "date" id = "calendarDropDown"> 
-		<input type = "time" id = "timeDropDown">  Return <button type = "submit" id = "returnJourneyButton"> </p>
-	</div>
+		<button id="submitButton" onclick = "getTravelInfo()"> Submit </button>
+
 	</section>
 </body>
 

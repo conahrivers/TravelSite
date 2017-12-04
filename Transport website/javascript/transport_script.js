@@ -22,7 +22,7 @@ $(function getTravelInfo() {
 		station_code: '',
 		tiploc_code: ''
 	};
-	var seriesPath = 'http://transportapi.com/v3/uk/places.json?query=euston&type=train_station&app_id=2c5c9fc2&app_key=419e8a35c994665a778df9d81b960f2f';
+	var seriesPath = 'http://transportapi.com/v3/uk/places.json?query=euston&type=train_station&app_id=f6b90e14&app_key=419e8a35c994665a778df9d81b960f2f';
 
 	getPlaceData(seriesPath, station);
 	function showdata(){
@@ -32,7 +32,7 @@ $(function getTravelInfo() {
 
 
 
-	//http://transportapi.com/v3/uk/places.json?query=euston&type=train_station&app_id=2c5c9fc2&app_key=419e8a35c994665a778df9d81b960f2f
+	//http://transportapi.com/v3/uk/places.json?query=euston&type=train_station&app_id=f6b90e14&app_key=419e8a35c994665a778df9d81b960f2f
 
 
 	function getPlaceData(seriesPath, station){
@@ -73,6 +73,6 @@ function isObject (item) {
 }
 
 
-var apiKey = "419e8a35c994665a778df9d81b960f2f";
+//var apiKey = "419e8a35c994665a778df9d81b960f2f";
 	
 });

@@ -27,7 +27,7 @@ $(function getTravelInfo() {
 	getPlaceData(seriesPath, station);
 	function showdata(){
 		station = getObject('allData');
-		$('#info').append('<p>'+station.tiploc_code+' Station is at lat '+station.latitude+' long '+station.longitude+'</p>');
+		$('#submitButton').append('<p>'+station.tiploc_code+' Station is at lat '+station.latitude+' long '+station.longitude+'</p>');
 	};
 
 

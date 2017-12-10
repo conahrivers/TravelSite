@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body{
-  background-image: url('http://gottakeepmovin.com/wp-content/uploads/2015/04/2015-04-28-09.03.59-3.jpg');
+  background-image: url("images/bus.png");
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -87,4 +87,3 @@ body{
 	margin-right: 50%;
     cursor: pointer;
 }
-

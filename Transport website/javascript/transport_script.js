@@ -29,13 +29,10 @@ $(document).ready(function () {
         }
     });
 
-    var now = Date.now();
-    
-    $("#datepicker-disable-past").datepicker({
-        isDisabled: function(date) {
-            return date.valueOf() < now ? true : false;
-        }
-    });
+    $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'pt-BR'
+      });
 
     $("#plusButton").on('click', function () {
         $("#normalFont").show();

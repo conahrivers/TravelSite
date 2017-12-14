@@ -6,14 +6,6 @@ body{
 }
 
 .search {
-  width: 100%;@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
-  background-image: url("images/bus.png");
-  font-family: 'Open Sans', sans-serif;
-}
-
-.search {
   width: 100%;
   position: relative;
   text-align: center;
@@ -58,10 +50,6 @@ body{
 	
 }
 
-#calendarDropDown, #timeDropDown {
-	display: inline-block;
-	margin-left: 0.5em;
-}
 
 .wrapper {
 	margin-left: 25%;
@@ -92,84 +80,4 @@ body{
 * {
   font-size: 0.98em;
   background-color: green;
-}
-  position: relative;
-  text-align: center;
-}
-
-#mainSearchBar {
-  width: 50%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 30px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-#mainSearchBar:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  position: absolute;
-  width: 45px;
-  height: 46px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.wrap{
-  width: 100%;
-  margin: 5em auto 2em auto;
-}
-
-.icons {
-  width: 100%;
-  text-align: center;
-}
-
-.icons img {
-  max-width: 100px;
-}
-
-.train, .bus, .plane {
-  display: inline-block;
-  margin-left: 3em;
-}
-
-.departureContainer {
-	width: 100%;
-	text-align: center;
-	
-}
-
-#calendarDropDown, #timeDropDown {
-	display: inline-block;
-	margin-left: 0.5em;
-}
-
-.wrapper {
-	margin-left: 25%;
-	margin-right: 25%;
-}
-
-#submitButton {
-    background-color: #00B4CC;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	margin-top: 10%;
-    margin-left: 50%;
-	margin-right: 50%;
-    cursor: pointer;
 }

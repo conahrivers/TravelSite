@@ -1,15 +1,56 @@
-$(document).ready(function() {
+$(document).ready(function () {
+
+    $("#normalFont").hide();
+
+    $("#submitButton").on('click', function (e) {
+
+        e.preventDefault();
+
+        var date = $("#calendarDropDown").val();
+        var time = $("#timeDropDown").val();
+
+        if (date == "" && time == "") {
+            var transport_url = 'https://transportapi.com/v3/uk/train/station/NRW/' + date + '/' + time + '/timetable.json?app_id=f6b90e14&app_key=419e8a35c994665a778df9d81b960f2f&train_status=passenger';
+
+            $.getJSON(transport_url, function (data) {
+                console.log(data);
+
+                var departuresObject = data.departures.all;
+
+                for (var i = 0; i < departuresObject.length; i++) {
+                    console.log(departuresObject[i].destination_name);
+                }
+            });
+
+        } else if (date == "" && time != "") {
+            alert('Please enter a date.');
+        } else if (date != "" && time == "") {
+            alert('Please enter a time.');
+        }
+    });
+
+    var now = Date.now();
     
-    $.getJSON("https://transportapi.com/v3/uk/train/station/NRW/2017-12-06/12:49/timetable.json?app_id=f6b90e14&app_key=419e8a35c994665a778df9d81b960f2f&train_status=passenger",
-        function (data){
+    $("#datepicker-disable-past").datepicker({
+        isDisabled: function(date) {
+            return date.valueOf() < now ? true : false;
+        }
+    });
 
-        console.log(data);
+    $("#plusButton").on('click', function () {
+        $("#normalFont").show();
+        $("*").css({
+            'font-size': '1.05em'
         });
+    });
+    $("#normalFont").on('click', function () {
+        $("*").css({
+            'font-size': '0.98em'
+        });
+    });
+    $("#greenButton").on('click', function () {
+        $(".greenColour").css({
+            'background-color': 'green'
+        });
+    });
 });
-
-        
-    /* 		 data.departures.all.forEach(departure => {
-                const destination = departure.destination_name;
-                const time = departure.aimed_departure_time;
-                $('.departures').append('<li><b>Going to:</b> ' + destination + 
-    '<br><b>At: </b>' + time + '</li>');  */

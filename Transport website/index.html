@@ -2,98 +2,86 @@
 
 <head>
 
-	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/style_new.css">
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script type="text/javascript" src="javascript/transport_script.js"></script>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-	</script>
-	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-	</script>
-	<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-	</script>
-	<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
-	</script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="javascript/transport_script.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
 
-	<title> home </title>
+    <title> home </title>
 
 </head>
 
 <body>
-	<section class="wrapper">
+    <nav class="navButtons">
+        <div class="accessabilityButtons">
+            <button id="greenButton"> Colour Blindness </button>
+            <button id="plusButton"> Large Text </button>
+            <button id="normalFont"> Normal Text </button>
+        </div>
+    </nav>
 
-		<div id="dropDownDepartures">
-			<form>
-				<input list="departures" id="drowDownDepartureList" placeholder="Choose a destination">
+    <div class="wrapper">
 
-				<datalist id="departures">
-					<option value="London">
-						<option value="Lowestoft">
-							<option value="Cambridge">
-								<option value="Great Yarmouth">
+        <div id="dropDownDepartures">
 
-				</datalist>
-			</form>
-		</div>
-		</div>
+            <input list="departures" id="drowDownDepartureList" placeholder="Choose a destination">
 
-		<div class="icons">
-			<div class="train">
-				<a href="https://www.thetrainline.com/">
-					<img src="images/train.png" alt="Train icon" class="train"> </a>
-			</div>
-			<div class="bus">
-				<a href="https://www.checkmybus.co.uk/">
-					<img src="images/bus.png" alt="Bus icon" class="bus"> </a>
-			</div>
-			<div class="plane">
-				<a href="https://www.flightcentre.co.uk/flights/quote/destinations?utm_source=google&utm_medium=cpc&utm_campaign=FCB_Generic_Pure_Cheap-Broad&infinity=ict2~net~gaw~ar~234247939610~kw~cheap%20flights~mt~b~cmp~FCB%20%2F%20Generic%20%2F%20Pure%20-%20Exact~ag~Pure%20Flight%20-%20E&gclid=EAIaIQobChMIns3ukM3S1wIVZZPtCh2dQAP9EAAYASAAEgJDDfD_BwE&gclsrc=aw.ds">
-					<img src="images/plane.png" alt="Plane icon" class="plane"> </a>
-			</div>
-		</div>
+            <datalist id="departures">
+                <option value="London">
+                    <option value="Lowestoft">
+                        <option value="Cambridge">
+                            <option value="Great Yarmouth">
 
-		<div id="datetimepicker" class="input-append date">
-			<input type="text"></input>
-			<span class="add-on">
-				<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-			</span>
-		</div>
+            </datalist>
 
-		<div id="info">
-			<button type="submit" id="submitButton"> Submit </button>
-		</div>
+        </div>
+        <div class="icons">
+            <button id="trainButton"> <img src = "images/train.png" /> Train </button>
+            <button id="busButton"> <img src = "images/bus.png" /> Bus </button>
+            <button id="planeButton"> <img src = "images/plane.png" /> Plane </button>
+        </div>
 
-		<div class="fontSize">
-			<button id="plusButton"> Large Text </button>
-			<button id="normalFont"> Normal Text </button>
-		</div>
-		<div clas="colours">
-			<button id="greenButton"> Green Colours </button>
-		</div>
-	</section>
-	<ul class="departures">
+        <div id="datetimepicker" class="input-append date">
+            <input type="text" placeholder="dd/mm/yyyy hh:mm" id="calendarBox">
+            <span class="add-on">
+                <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+            </span>
+        </div>
 
-	</ul>
+        <div id="info">
+            <button type="submit" id="submitButton"> Submit </button>
+        </div>
+    </div>
 
 
 
 
-	<!--	<script type="text/javascript" src="javascript/transport_script.js"></script>
+    <!--	<script type="text/javascript" src="javascript/transport_script.js"></script>
 	<script type="text/javascript" src="javascript/localstorage.js"></script> -->
-</body>
-<footer>
-	<!-- Train icon made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
-	<!-- Bus icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
-	<!-- Plane icon made by <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
 
-</footer>
+    <footer>
+        <!-- Train icon made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
+        <!-- Bus icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
+        <!-- Plane icon made by <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
+    </footer>
+
+</body>
 
 </html>
